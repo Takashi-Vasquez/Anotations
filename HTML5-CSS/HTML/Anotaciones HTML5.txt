@@ -1,0 +1,14 @@
+**************************************************************************************
+Introducción:
+¿Que es HTML?
+-Corresponte a las siglas de "HiperTexto Markup Lenguage" o en español "Lenguaje de Marcas de Hipertexto"
+-Utiliza secuencias de comandos par realizar procesos, un lenguaje de marcado utiliza diferentes etiquetas para identificar el contenido
+Diseño Web Moderno:
+ HTML: 		Estructura
+ CSS:		Presentación
+ JavaScript:	Comportamiento
+ PHP o similar:	Back-end
+ CMS: 		Gestión de contenidos
+
+**************************************************************************************
+<p></p>				una etiqueta

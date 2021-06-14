@@ -1,0 +1,112 @@
+<!-- permite que el usuario envie formulario al servidor -->
+<!-- ETIQUETAS BASICAS DE FORMULARIO-->
+<!--form: 
+    *Envio de datos 
+    *Sin representación grafica
+    atributo
+        action
+        method: metodo de envio(GET/POST)
+        accept-charset: 
+        enctype -->
+<!--input: 
+    *texto
+    *casillas de verificacion
+    atributos
+        name: text, nombre de campo para envio
+        type: text,checkbox,file, password, etc
+        disabled: desabilita el campo para no se usado("disabled")
+        readonly: permite copiar el texto
+        value  -->
+<!--select: Listas desplegables, listas de seleccion multiple
+    atributo
+        name
+        multiple
+    etiquetas
+        option
+        optgroup    
+      -->
+<!--textarea:  
+    atributos
+        name
+        cols
+        rows
+    -->
+<!--label: usabilidad, accesibilidad
+    atrbutos
+        for
+      -->
+<!--fieldset: agrupacion semantica, marco
+    etiquetas
+        legend: ( pone titulo en el grupo) -->
+
+<html>
+
+<head>
+    <title>formularios</title>
+</head>
+
+<body>
+    <!--input -->
+    <input type="text">
+    <br />
+    <br />
+    <input type="text" value="HOLA MUNDO">
+    <br />
+    <br />
+    <!--radio -->
+    <input type="radio" checked="checked" /> PARTE 1
+    <br />
+    <input type="radio" /> PARTE 2
+
+    <!--form -->
+    <form enctype="multipart/form-data">
+        <input type="file" accept="image/gif">
+    </form>
+    <br />
+    <!--LISTA DESPLEGABLE-->
+    <select id="desplegable">
+        <option value="HTML">
+            HTML
+        </option>
+        <option value="CSS">
+            CSS
+        </option>
+    </select>
+    <br />
+    <br />
+    <p>SELECCION MULTIPLE</p>
+    <!--LISTA DESPLEGABLE con seleccion multiple-->
+    <select id="desplegable" multiple="multiple">
+        <option value="HTML">
+            HTML
+        </option>
+        <option value="CSS">
+            CSS
+        </option>
+    </select>
+    <br />
+    <br />
+    <!--LISTA DESPLEGABLE con seleccion multiple-->
+    <select id="desplegable" multiple="multiple">
+        <optgroup label="HTML">
+            <option value="tablas">tablas</option>
+            <option value="formularios">formularios</option>
+        </optgroup>
+        <optgroup label="CSS">
+            <option value="colores">colores</option>
+            <option value="diseño">diseño</option>
+        </optgroup>
+    </select>
+    <br />
+    <br />
+
+    <fieldset>
+        <legend>PERFIL</legend>
+        NOMBRE: <input type="text"><br />
+        <br /> APELLIDO: <input type="text">
+    </fieldset>
+
+
+</body>
+
+</html>

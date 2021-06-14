@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <title>TABLA</title>
+</head>
+
+<body>
+    <table></table>
+    <!--INICIO Y CIERRE DE LA TABLA-->
+    <tr></tr>
+    <!--FILA-->
+    <td></td>
+    <!--CELDA DE DATOS-->
+    <th></th>
+    <!--cabecera de tablas-->
+    <thead></thead>
+    <!--Agrupa filas de cabecera-->
+    <tbody></tbody>
+    <!--Agrupa filas de cuerpo-->
+    <tfoot></tfoot>
+    <!--Agrupa filas de pie-->
+
+    <!--EJEMPLO-->
+    <table>
+        <caption>MI PRIMERA TABLA</caption>
+        <thead>
+            <tr>
+                <th>ALUMNO</th>
+                <th>NOTA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>PEPE</td>
+                <td>7,65</td>
+            </tr>
+            <tr>
+                <td>MARIA</td>
+                <td>8,54</td>
+            </tr>
+            <tr>
+                <td>JORDI</td>
+                <td>5,55</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>MEDIA</td>
+                <td>7,25</td>
+            </tr>
+            <tr>
+                <td>DESV. TÍPICA</td>
+                <td>7,35</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!--EJEMPLO DE COLSPAN Y ROWSPAN-->
+    <br>
+    <table>
+        <caption>INGRESOS</caption>
+        <thead>
+            <tr>
+                <td colspan="2">2012</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td rowspan="2">ENERO</td>
+                <td>100 Euro</td>
+            </tr>
+            <tr>
+                <td>50 Euro</td>
+            </tr>
+            <tr>
+                <td>FEBRERO</td>
+                <td> 75 Euro</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table>
+        <caption>INGRESOS</caption>
+
+        <thead>
+            <tr>
+                <td colspan="3" align="center">2012</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Enero</td>
+                <td>1</td>
+                <td>100 Euro</td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>50 Euro</td>
+            </tr>
+            <tr>
+                <td colspan="2">FEBRERO</td>
+                <td> 75 Euro</td>
+            </tr>
+        </tbody>
+
+        <tr></tr>
+    </table>
+
+</body>
+
+</html>

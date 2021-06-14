@@ -1,0 +1,92 @@
+**************************************************************************************
+Conceptos básicos
+ print() 			Imprimir
+Operaciones simples
++,-,*,/
+** 				Exoponeracion(elevado)
+// 				Cociente
+%  				Resto
+
+**************************************************************************************
+Strings & Variables
+Cadena de texto
+ print("" o '')			Sirve para escribir cadenas de texto
+Barrra diagonal inversa
+ \				Sirve para agregar caracteres especiales(\" \')
+ \n & \t			salto de linea & tabulación
+ """				Se agregan salto de linea automatico en cadenas
+Concatenacion Ejemplo
+ print("Hola" + 'Mundo')		=HolaMundo
+ print('1' + '5')		=15
+ print(3* 'Hola')		=HolaHolaHola
+Variables
+ user="james"
+entrada y salida sencilla
+ input("mensaje")		Permite ingresar datos a traves de teclado
+ int(input())			convierte dato ingresado en integer
+ str(input())
+ float(input())
+operadores in situ
+ x +=3 es la manera más concisa de x=x+3
+**************************************************************************************
+Estructuras de control
+Booleanos
+ True y False			valor verdadero y valor falso
+Ejemplo:
+print(2==3)			Devuelve False
+print("Huapaya" == "Huapaya")	Devuelve True
+ if: & else:			También se usa elif de manebra abreviada de else if{...}
+Lógica booleana
+ and 				Si ambos cumple con la condición; True 
+ or 				Si alguno o ambos cumple con la condición; True
+ not				Toma un argumento y lo invierte
+ ejemplo:
+ print(1==1){False}		El resultado es "not True" por lo tanto es False
+ print(1>7){True}		El resultado es "not False" por lo tanto es True
+Listas				Se utiliza para almacenar varios elementos
+words=["¡","Hola",Mundo","!"]
+word=[2] --> Mundo
+str="¡Hola Mundo!
+print(str[6])			Se puede indexar cadena en este caso resultado="M"
+Operaciones de lista
+ in				Verifica si un elemento está en una lista y devuelve True
+				si lo encuentra False si no es así
+words=["spam","egg","spam","sausage"]
+print("spam" in words)		True
+print("tomato" in words)	False
+Métodos
+ lista.append(4)		apéndices añade un elemento al final de la lista
+ lista.len(4)			len obtiene número de elementos que contiene una lista
+ lista.insert(indice,"dato")	insert permite ingresar datos en cualquier posicion de la 	
+				lista indicandole lugar 
+ lista.index("HOLA")		encuentra el lugar del dato buscado y devuelve el indice
+ max(lista)			Devuelve el elemento de la lista con el valor maximo
+ min(lista)			Devuelve el elemento de la lista con el valor minimo
+ lista.count(item)		Devuelve las cantidades que aparece el item en la lista	
+ lista.remove(item)		Elimina un objeto en la lista	
+ lista.reverse()		Invierte elemento en una lista
+while i<=5
+break				Para finalizar un bucle
+continue			salta a la parte superior del bucle
+for word in words
+Rango
+range(10)			devuelve la secuencia de numeros de fomra predeterminada
+				comienza de 0 y se detiene antes del número especificado
+range(3, 8)			produce valores del primero al segundo
+range(5, 20, 2)			produce valores del primero al segundo en numeros pares
+
+
+
+**************************************************************************************
+Funciones y Módulos
+def				sirve para crear tus propias funciones fuera de predeter.
+return				Retorna valores(fin de la ejecucion al usar return)
+#				Comentarios
+Los Docstrings(""" """)		se usa para explicar codigos o escribir textos largos			
+
+
+**************************************************************************************
+Excepciones y archivos
+
+**************************************************************************************
+Más Tipos

@@ -1,0 +1,153 @@
+**************************************************************************************
+Introducción:
+¿Que es HTML?
+-Corresponte a las siglas de "HiperTexto Markup Lenguage" o en español "Lenguaje de Marcas de Hipertexto"
+-Utiliza secuencias de comandos par realizar procesos, un lenguaje de marcado utiliza diferentes etiquetas para identificar el contenido
+Diseño Web Moderno:
+ HTML: 		Estructura
+ CSS:		Presentación
+ JavaScript:	Comportamiento
+ PHP o similar:	Back-end
+ CMS: 		Gestión de contenidos
+
+**************************************************************************************
+<p></p>				una etiqueta
+<html></html>			El documento HTML tiene etiquetas html de apertura y
+				cierre.
+<head></head>			La cabecera de HTML(estan los elementos no visuales)
+<body></body>			Después de etiqueta head(estan los elementos visuales)
+				encabezados,párrafos,listas, citas,imagenes, hipervinculos
+<title></title>			Titulo de la pagina(dentro de la etiqueta head, no se ve)
+<br/>				Salto de linea
+Formatos Físicos:
+	<B>…</B>		Negrita        
+	<I>…</I>		Cursiva        
+	<U>…</U>		Subrayado       
+	<TT>…</TT>		Teletipo       
+	<STRIKE>…</STRIKE>	Tachado       
+	<BIG>…</BIG>		Grande       
+	<SMALL>…</SMALL>	Pequeña       
+	<SUP>…</SUP>		Superíndice       
+	<SUB>…</SUB>		Subíndice   
+	<INS>…</INS>		Subrayado  
+	<DEL>…</DEL>		Tachado   
+Formatos Lógicos:
+	<CITE>…</CITE> 		Cita         
+	<CODE>…</CODE> 		Código      
+	<DFN>…</DFN>		Definición        
+	<EM>…</EM>		Énfasis        
+	<STRONG>…</STRONG>	Grueso o fuerte       
+	<KEY>…</KEY>		Palabras clave    
+	<SAMP>…</SAMP>		Ejemplos       
+	<KBD>…</KBD>		Usuario        
+	<VAR>…</VAR>		Variables        
+	<XMP>...</XMP> 		Ejemplo literal (ignora las etiquetas HTML de dentro)
+Encabezados HTML		Existe 6 niveles de encabezados
+	<h1>Este es el encabezado 1</h1>
+        <h2>Este es el encabezado 2</h2>
+        <h3>Este es el encabezado 3</h3>
+        <h4>Este es el encabezado 4</h4>
+        <h5>Este es el encabezado 5</h5>
+        <h6>Este es el encabezado 6</h6>
+<hr/>				Lineas horizontal(en HTML5 <hr>define un cambio de tema)
+<!-- comentario -->		sirve para escribir un cometario
+
+ATRIBUTOS HTML
+<p align="center">...</p>	el texto de alinea en el centro
+DIMENCION
+<hr width="50px"/>		que tenga 50 pixeles
+<hr width="50%"/>		el ancho tenga el 50%
+<img src="image.jpg"/>		insertar imagen
+alt=""				Se coloca la ruta de la imagen Si esta el la misma carpeta
+				se deja con vacio""
+Cambiar TAMAÑO de una IMAGEN
+<img src="image.jpg" height=150px width="150px" alt=""/>
+<img src=... border="1px" alt="" />		Borde de una imagen
+<a href="http:...">APRENDE JUGANDO</a> 		atributo href para crear hipervinculo
+<a href="http:..." targer="_blanck"> APRENDE JUGANDO </a> 	
+	_blank 			valor _blank el hipervinculo abrira en una nueva ventana 
+				pestaña
+Listas ordenadas		la lista ordenada empieza con <ol> y los items <li>
+<ol>
+	<li>Rojo</li>		1. Rojo
+	<li>Verde</li>		2. Verde
+	<li>Azul</li>		3. Azul
+</ol>
+Lista sin ordenar 		lista sin ordenar empieza con <ul>
+<ul>
+	<li>Rojo</li>		*Rojo
+	<li>Verde</li>		*Verde
+	<li>Azul</li>		*Azul
+</ul>
+
+CREACION DE TABLAS
+	Las tablas son definidas con la etiqueta <table>
+	Las tablas son divididas en FILAS con la etiqueta <tr>
+	Las tablas son divididas en COLUMNAS con la etiqueta <td>
+<table>#definir tabla
+   <tr>#fila
+	<td></td> #columna
+	<td></td> #columna
+	<td></td> #columna
+   </tr>
+</table>
+ATRIBUTOS BORDER Y COLSPAN EJEMPLO:
+<table border="2">...</table> 	se agrega borde la tabla
+<td colspan="2">TEXTO</td>	la celda de una columna puede expandisse entre dos o más 
+				columnas
+<tr rowspan="2">...</tr>	la celda se expande a más de una fila
+bgcolor="red"			se especifica color de fondo de una celda en rojo
+<th></th>			represetan encabezados de una tabla
+TIPOS DE ELEMENTOS
+ejemplo:
+ <div>...</div>			sirve para ser usado como contenedor para otros elementos
+ <div style="background-color:green; color:white; padding:20px;">
+<span>				el elemento span sirve para dar formato solo a algun texto
+(block)				nivel de bloque 
+       	Por Ejemplo: <h1>, <form>, <li>, <ol>, <ul>, <p>, <pre>, <table>, <div>, etc.
+(inline)			en linea 
+	Por Ejemplo: <b>, <a>, <strong>, <img>, <input>, <em>, <span>, etc.
+
+TIPOS DE ELEMENTOS
+Otros elementos pueden ser usados como elementos del nivel de bloque o elementos en línea.  Esto incluye los siguientes elementos:
+	APPLET 	- applet Java embebido
+	IFRAME 	- marco en línea
+	INS 	- texto insertado
+	MAP 	- mapa de imagen
+	OBJECT 	- objeto incrustado
+	SCRIPT 	- secuencia de comandos dentro de un documento HTML
+FORMULARIOS	
+<form>...</form>			definir formularios
+<form action="http:...">...</form>	el atributo action redireccionara al enviar el 
+					formulario
+<form action="url" method="GET">	Los datos del formulario serán visibles en la 
+					direccion de la pagina
+<form action="url" method="POST">	Se usa si el formulario esta actualizando datos o 
+					incluye información sensible(los datos enviados no 
+					son visibles en direccion de la pagina)
+<input>					captura los datos ingresados en formulario
+<input type="text" name="usuario"/><br/> 
+<input type="password" name="contraseña"/><br/> 
+aparte pueden ser radio, URL, envío , etc.
+<input type="radio" name="gender" value="male"/>Masculino<br/> permite seleccionar una opcion
+<input type="checkbox" name="gender" value="1"/>Masculino<br/> permite seleccionar mas de una opcion
+<input type="submit" value="Enviar"/> 	El tipo submit envía un formulario a la dirección especificada en su atributo action
+<textarea name="message">MENSAJE LARGO</textarea> sirve para escribir un campo de texto largo
+COLORES HTML!!
+modelo de color HTML combinaziones rojo, verde y azul claro (RGB por siglas en ingles)
+<body bgcolor="000099">		#fondo azul oscuro
+  <h1>
+	<font color="#FFFFFF">texto</font> #texto blanco
+  </h1>
+</body>
+LA ETIQUETA <frame>			
+<frame>					define ventana especifica(marco) dentro de <frameset>
+<framset>				especifica e numero de columnas o filas en conjunto de 
+					marcos,tambien el porcentaje o numero de pixeles 
+					de espacio
+
+<noresize> 				para impedir que el usuario pueda redimensionar un 
+					elemento <frame>
+Ejemplo: <frame noresize="noresize">
+<noframe>¡Los marcos no son soportados!</noframe> nos da una alternativa para los exploradores que no soportan visualizar las paginas
+
