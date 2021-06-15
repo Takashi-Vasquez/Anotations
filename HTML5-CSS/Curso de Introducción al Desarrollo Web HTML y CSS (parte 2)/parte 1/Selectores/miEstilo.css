@@ -1,0 +1,32 @@
+/*a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}*/
+
+
+/* cuando se el cursor pasa por encima**/
+
+a:hover {
+    text-decoration: none;
+    color: rgb(19, 41, 243);
+    font-size: 3em;
+}
+
+
+/* cuando se el cursor clickea**/
+
+a:active {
+    text-decoration: none;
+    color: rgb(1, 252, 106);
+    font-size: 1em;
+}
+
+
+/* para cambiar el estilo de un formulario para destacar el campo*/
+
+a:focus {
+    border: 2px solid #385D8A;
+}

@@ -1,0 +1,58 @@
+/*Tipo, Elemento o Etiqueta*/
+
+h1 {
+    color: #00B;
+}
+
+span {
+    color: blanchedalmond;
+}
+
+
+/*.Clase*/
+
+.box {
+    background-color: #00B;
+    color: #FFF;
+}
+
+
+/*Combinacion de selectores*/
+
+span.box {
+    font-weight: bold;
+}
+
+
+/* Identificador*/
+
+#myDiv {
+    color: #00B;
+}
+
+span#mySpan {
+    color: #0B0;
+}
+
+
+/*seleccion de etiquetas anidadas*/
+
+div span {
+    font-size: 2em;
+}
+
+span a {
+    text-decoration: none;
+}
+
+.box span {
+    font-size: 2em;
+}
+
+#myDiv span {
+    color: #00B;
+}
+
+#mySpan a {
+    text-decoration: none;
+}

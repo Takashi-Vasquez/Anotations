@@ -1,0 +1,124 @@
+ul#lista>li {
+    font-weight: bold;
+}
+
+
+/* selecciona al primer elemento */
+
+li:first-child {
+    font-size: 2em;
+}
+
+
+/*selecciona la primera letra del texto al elemento seleccionado*/
+
+li:first-letter {
+    font-size: 2em;
+}
+
+
+/*se aplica a la primera linea del elemento seleccionado*/
+
+linea::first-line {
+    font-size: 2em;
+}
+
+
+/*selecciona a todo los elementos que tengan title*/
+
+
+/*y si se quiere especificar mas se pone el valor Ejem: a[title=Buscador]{}*/
+
+a[title] {
+    font-size: 2em;
+}
+
+
+/*si se quiere seleccionar la primera palabra */
+
+a[id|=top] {
+    background-color: yellow;
+}
+
+
+/*Si en alguna parte debe contener la palabra entonces se usa*/
+
+a[title~=curso] {
+    background-color: yellow;
+}
+
+:lang(en) {
+    font-style: italic;
+}
+
+
+/*afecta a lo que le sigue al seleccionado*/
+
+a.new:after {
+    font-style: italic;
+}
+
+
+/*afecta a lo que esta detras de lo seleccionado*/
+
+a.old:before {
+    font-style: italic;
+}
+
+:last-child {
+    font-style: italic;
+}
+
+
+/*#selecciona el ultimo elemento*/
+
+:first-child() {
+    font-style: italic;
+}
+
+
+/*# selecciona el numero N seleccionado*/
+
+:nth-child() {
+    font-style: italic;
+}
+
+
+/*# selecciona el numero N desde el ultimo*/
+
+:nth-last-child() {
+    font-style: italic;
+}
+
+:first-of-type {
+    font-style: italic;
+}
+
+
+/*#selecciona el primer elemento del tipo*/
+
+:last-of-type {
+    font-style: italic;
+}
+
+:nth-of-type() {
+    font-style: italic;
+}
+
+:nth-last-of-type() {
+    font-style: italic;
+}
+
+
+/*En este caso se aplica a todos los elementos de tipo "p" que se encuentre detras de un elemento h1*/
+
+h1+p {
+    font-style: italic;
+}
+
+
+/*En este caso se aplica a todos los elementos de tipo "p" y a sus hermanos*/
+
+h1~p {
+    font-style: italic;
+}
