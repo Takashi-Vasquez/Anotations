@@ -1,0 +1,81 @@
+.may {
+    list-style-type: lower-alpha;
+}
+
+.min {
+    list-style-type: upper-alpha;
+}
+
+.may-roman {
+    list-style-type: upper-roman;
+}
+
+.min-roman {
+    list-style-type: lower-roman;
+}
+
+.in {
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.out {
+    list-style-position: outside;
+}
+
+.triangulo {
+    list-style-image: url("pikachu.png");
+}
+
+a {
+    /*quita la decoracion de link*/
+    text-decoration: none;
+}
+
+.menu-Vert {
+    /*quita el estilo(quita las esferas por defecto)*/
+    list-style-type: none;
+    /*establece el margen para los lados*/
+    margin: 0;
+    /*establece el espacio de relleno requerido por todos los lados de un elemento en este caso 0*/
+    padding: 0;
+}
+
+.vertical a {
+    /*cambia el modo de visualizacion a bloque*/
+    display: block;
+    /*define la anchura*/
+    width: 120px;
+    /*se define el color de la letra a blanco*/
+    color: #fff;
+    /*color de fondo verde*/
+    background-color: #98bf21;
+    /*se alinea en el centro*/
+    text-align: center;
+    padding: 5px;
+}
+
+.vertical a:hover,
+.vertical a:active {
+    background-color: #7a997a;
+}
+
+.horizontal li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal a {
+    margin: 0;
+    color: #fff;
+    background-color: #98bf21;
+    text-align: center;
+    padding: 5px;
+}
+
+.horizontal a:hover,
+.horizontal a:active {
+    background-color: #7a997a;
+}
